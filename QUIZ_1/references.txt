@@ -1,0 +1,6 @@
+References:
+
+
+https://www.howtogeek.com/343877/what-is-an-api/
+https://www.mulesoft.com/resources/api/what-is-an-api
+https://www.typescriptlang.org/
