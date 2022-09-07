@@ -1,6 +1,13 @@
 References:
 
-
 https://www.howtogeek.com/343877/what-is-an-api/
 https://www.mulesoft.com/resources/api/what-is-an-api
 https://www.typescriptlang.org/
+https://codewithmosh.com
+https://science.jrank.org/programming/Guard_Clause.html
+
+ Video Tutorial:
+
+https://www.youtube.com/watch?v=d56mG7DezGs&t=69s
+
+
