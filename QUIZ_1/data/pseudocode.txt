@@ -5,11 +5,11 @@ Strassen's Algorithm (Pseudocode)
 
 // Make a function that will accept 2 arrays
 // make 3 for loops in order to access the index of a 2d array and also another for loop to insert the product of matrix A and B
-function MatrixMultiply(A, B)
-	for(i <= 0 to n - 1)
-		for(j <= 0 to n - 1)
+function twoDMultiply(A, B)
+	for(i <= 0 to A.length)
+		for(j <= 0 to B[i].length)
 			C[i,j] <= 0
-			for(k <= 0 to n - 1)
+			for(k <= 0 to A[i].length)
 				C[i,j] <= C[i,j] + A[i,k] * B[k,j]
 	return C
 
@@ -18,10 +18,10 @@ function MatrixMultiply(A, B)
 // Main Strassen Function
 // this function will check if the given matrix length is less than or equal to 2
 
-// Make a function that will check if the parameters length is less than or equal to 2 if true call the MatrixMultiply function
+// Make a function that will check if the parameters length is less than or equal to 2 if true call the twoDMultiply function
 function strassen(A, B)
 	if A.length <= 2 || B. length <= 2
-		return MatrixMultiply(A, B)
+		return twoDMultiply(A, B)
 	
 	// Split the matrix to get the individual value for addition
     // deconstruction of Array to split the multidimensional array into single array
