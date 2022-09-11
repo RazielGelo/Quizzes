@@ -1,0 +1,40 @@
+Strassen's Algorithm (Pseudocode)
+
+// Matrix Multiplication Function if the matrix is 2x2 (A[] * B[] = C[])
+function MatrixMultiply(A, B)
+	for(i <= 0 to n - 1)
+		for(j <= 0 to n - 1)
+			C[i,j] <= 0
+			for(k <= 0 to n - 1)
+				C[i,j] <= C[i,j] + A[i,k] * B[k,j]
+	return C
+
+
+// Main Strassen Function
+function strassen(A[], B[])
+	if A.length <= 2 || B. length <= 2
+		return MatrixMultiply(A[0 to n-1], B[0 to n-1])
+	
+	// Split the matrix to get the individual value for addition
+	const {a, b, c, d} = A[]
+	const {e, f, g, h} = B[]
+
+	// Setting up the value of each matrix
+	const ae = strassen(a, e)
+	const bg = strassen(b, g)
+	const af = strassen(a, f)
+	const bh = strassen(b, h)
+	const ce = strassen(c, e)
+	const dg = strassen(d, g)
+	const cf = strassen(c, f)
+	const dh = strassen(d, h)
+	
+	// getting the value of each index in for C matrix
+	C00 = ae + bg
+	C01 = af + bh
+	C11 = ce + dg
+	C12 = cf + dh
+
+	C[] = [[C00, C01], [C11],C12]
+	
+	return C
