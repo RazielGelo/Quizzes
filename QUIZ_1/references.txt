@@ -7,9 +7,11 @@ https://codewithmosh.com
 https://science.jrank.org/programming/Guard_Clause.html
 https://en.wikipedia.org/wiki/Next.js
 https://reactjs.org/tutorial/tutorial.html
+https://www.geeksforgeeks.org/strassens-matrix-multiplication/
 
  Video Tutorial:
 
 https://www.youtube.com/watch?v=d56mG7DezGs&t=69s
 https://www.youtube.com/watch?v=Jmbid-9a5mk
+https://www.youtube.com/watch?v=OSelhO6Qnlc
 
