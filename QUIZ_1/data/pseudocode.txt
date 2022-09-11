@@ -29,21 +29,26 @@ function strassen(A, B)
 	const {e[], f[], g[], h[]} = B
 
 	// this will solve the individual matrixes that is deconstructed above and store it in a variable for computation
-	const ae = strassen(a, e)
-	const bg = strassen(b, g)
-	const af = strassen(a, f)
-	const bh = strassen(b, h)
-	const ce = strassen(c, e)
-	const dg = strassen(d, g)
-	const cf = strassen(c, f)
-	const dh = strassen(d, h)
+	const ae <= strassen(a, e)
+	const bg <= strassen(b, g)
+	const af <= strassen(a, f)
+	const bh <= strassen(b, h)
+	const ce <= strassen(c, e)
+	const dg <= strassen(d, g)
+	const cf <= strassen(c, f)
+	const dh <= strassen(d, h)
 	
 	// getting the value of each index in for C matrix
-	C00 = ae + bg
-	C01 = af + bh
-	C11 = ce + dg
-	C12 = cf + dh
+	C00 <= ae + bg
+	C01 <= af + bh
+	C11 <= ce + dg
+	C12 <= cf + dh
 
-	C[] = [[C00, C01], [C11],C12]
+    // Inserting the values to the new array
+    C[0,0] <= C00
+    C[0,1] <= C01
+    C[1,0] <= C10
+    C[1,1] <= C11
 	
+    // return the new array
 	return C
