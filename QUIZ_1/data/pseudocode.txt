@@ -1,6 +1,10 @@
 Strassen's Algorithm (Pseudocode)
 
-// Matrix Multiplication Function if the matrix is 2x2 (A[] * B[] = C[])
+// This function will be called if the given matrix length is less than or equal to 2
+// This function will be responsible for matrix of 2x2
+
+// Make a function that will accept 2 arrays
+// make 3 for loops in order to access the index of a 2d array and also another for loop to insert the product of matrix A and B
 function MatrixMultiply(A, B)
 	for(i <= 0 to n - 1)
 		for(j <= 0 to n - 1)
@@ -10,16 +14,21 @@ function MatrixMultiply(A, B)
 	return C
 
 
+
 // Main Strassen Function
-function strassen(A[], B[])
+// this function will check if the given matrix length is less than or equal to 2
+
+// Make a function that will check if the parameters length is less than or equal to 2 if true call the MatrixMultiply function
+function strassen(A, B)
 	if A.length <= 2 || B. length <= 2
-		return MatrixMultiply(A[0 to n-1], B[0 to n-1])
+		return MatrixMultiply(A, B)
 	
 	// Split the matrix to get the individual value for addition
-	const {a, b, c, d} = A[]
-	const {e, f, g, h} = B[]
+    // deconstruction of Array to split the multidimensional array into single array
+	const {a[], b[], c[], d[]} = A
+	const {e[], f[], g[], h[]} = B
 
-	// Setting up the value of each matrix
+	// this will solve the individual matrixes that is deconstructed above and store it in a variable for computation
 	const ae = strassen(a, e)
 	const bg = strassen(b, g)
 	const af = strassen(a, f)
