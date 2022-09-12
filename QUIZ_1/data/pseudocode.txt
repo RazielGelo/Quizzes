@@ -25,8 +25,8 @@ function strassen(A, B)
 	
 	// Split the matrix to get the individual value for addition
     // deconstruction of Array to split the multidimensional array into single array
-	const {a[], b[], c[], d[]} = A
-	const {e[], f[], g[], h[]} = B
+	const [[a, b], [c, d]] = A
+	const [[e, f], [g, h]] = B
 
 	// this will solve the individual matrixes that is deconstructed above and store it in a variable for computation
 	const ae <= strassen(a, e)
