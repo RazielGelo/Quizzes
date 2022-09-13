@@ -1,7 +1,8 @@
-// This function gets the 2 x 2
+// This function that splits the matrix
 function splitMatrix(Matrix:number[][], first:number, second:number):number[][] {{
     let length = Matrix.length
     let matrix:number[][] = [[]];
+	// This for loop is responsible in slicing the matrix depending in their start and end
     for(let i = 0; i < length/2; i++) {
         matrix[i] = Matrix[first ? (length / 2) + i : i].slice(second ? length / 2 : 0, second ? length : length / 2 );
     }
@@ -11,12 +12,15 @@ function splitMatrix(Matrix:number[][], first:number, second:number):number[][] 
 // This function subtract 2 Matrixes
 function subMatrix(A:number[][], B:number[][]) : number[][]{
     let tempMatrix: number[][] = [[]];
+	// this is responsible in accessing the index of a multidimensional array and subtracting them
     for(let i = 0; i < A.length; i++) {
+		// we just added this because we are encountering an error if we remove this code
         tempMatrix.push([]);
         for(let j = 0; j <A[i].length; j++) {
             tempMatrix[i][j] = (A[i][j] - B[i][j]);
         }
     }
+	// we used pop because there is an error when we are doing the push
 	tempMatrix.pop();
 
     return tempMatrix
@@ -25,25 +29,33 @@ function subMatrix(A:number[][], B:number[][]) : number[][]{
 // This function add 2 Matrixes
 function addMatrix(A:number[][], B:number[][]) : number[][]{
     let tempMatrix: number[][] = [[]];
+		// this is responsible in accessing the index of a multidimensional array and subtracting them
     for(let i = 0; i < A.length; i++) {
+		// we just added this because we are encountering an error if we remove this code
         tempMatrix.push([]);
         for(let j = 0; j <A[i].length; j++) {
             tempMatrix[i][j] = (A[i][j] + B[i][j]);
         }
     }
+	// we used pop because there is an error when we are doing the push
 	tempMatrix.pop();
 
     return tempMatrix
 }
 
 function strassen2(A:number[][], B:number[][]):number[][] {
+	// stores the length of the first Matrix
     let n = A.length
+	// declare a multidimensional array
     let C:number[][] = [[]];
 
+	// This will be responsble when the length of the matrix is 1 and can do the multiplication
     if(n === 1) {
         C[0][0] = A[0][0] * B[0][0];
     }
+	// this will check if the length of the first Matrix is a power of 2 or log of 2
     else if(Math.log2(n) % 1 === 0) {
+		
         let a = splitMatrix(A, 0, 0)
         let b = splitMatrix(A, 0, 1)
         let c = splitMatrix(A, 1, 0)
