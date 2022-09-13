@@ -1,54 +1,35 @@
-Strassen's Algorithm (Pseudocode)
+Strassen Algorithm
 
-// This function will be called if the given matrix length is less than or equal to 2
-// This function will be responsible for matrix of 2x2
+Strassen(A,B)
 
-// Make a function that will accept 2 arrays
-// make 3 for loops in order to access the index of a 2d array and also another for loop to insert the product of matrix A and B
-function twoDMultiply(A, B)
-	for(i <= 0 to A.length)
-		for(j <= 0 to B[i].length)
-			C[i,j] <= 0
-			for(k <= 0 to A[i].length)
-				C[i,j] <= C[i,j] + A[i,k] * B[k,j]
-	return C
+    // Storing the length of Matrix A
+    n <= A.length
 
+    // Base Case to check if the length of Matrix A is 1 to do the multiplication
+    if n = 1 do
+       C[0][0] <= A[0][0] * B[0][0]
 
+    // If the length of A Matrix is more than 1 and it is a power of two it will enter this code block
+    else if n is power of two do
 
-// Main Strassen Function
-// this function will check if the given matrix length is less than or equal to 2
+        // Split the Matrix A into 4
+        A11 <= A[0,0]
+        A12 <= A[0,1]
+        A21 <= A[1,0]
+        A22 <= A[1,1]
 
-// Make a function that will check if the parameters length is less than or equal to 2 if true call the twoDMultiply function
-function strassen(A, B)
-	if A.length <= 2 || B. length <= 2
-		return twoDMultiply(A, B)
-	
-	// Split the matrix to get the individual value for addition
-    // deconstruction of Array to split the multidimensional array into single array
-	const [[a, b], [c, d]] = A
-	const [[e, f], [g, h]] = B
+        // Split the Matrix B into 4
+        B11 <= B[0,0]
+        B12 <= B[0,1]
+        B21 <= B[1,0]
+        B22 <= B[1,1]
 
-	// this will solve the individual matrixes that is deconstructed above and store it in a variable for computation
-	const ae <= strassen(a, e)
-	const bg <= strassen(b, g)
-	const af <= strassen(a, f)
-	const bh <= strassen(b, h)
-	const ce <= strassen(c, e)
-	const dg <= strassen(d, g)
-	const cf <= strassen(c, f)
-	const dh <= strassen(d, h)
-	
-	// getting the value of each index in for C matrix
-	C00 <= ae + bg
-	C01 <= af + bh
-	C11 <= ce + dg
-	C12 <= cf + dh
-
-    // Inserting the values to the new array
-    C[0,0] <= C00
-    C[0,1] <= C01
-    C[1,0] <= C10
-    C[1,1] <= C11
-	
-    // return the new array
-	return C
+        // Recursion to get the value of each point to be ready in getting value of the C matrix
+        // Because adding and subtracting matrix is different we need to make a function to do it
+        P1 <= Strassen((A11 + A22), (B11 + B22))
+        P2 <= Strassen((A21 + A22), B11)
+        P3 <= Strassen(A11, (B12 - B22))
+        P4 <= Strassen(A22, (b21 - B11))
+        P5 <= Strassen((A11 + A12), B22)
+        P6 <= Strassen((A21 - A11), (B11 + B12))
+        P7 <= Strassen((A12 - A22), (B21 + B22))
