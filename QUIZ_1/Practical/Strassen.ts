@@ -17,6 +17,8 @@ function subMatrix(A:number[][], B:number[][]) : number[][]{
             tempMatrix[i][j] = (A[i][j] - B[i][j]);
         }
     }
+	tempMatrix.pop();
+
     return tempMatrix
 }
 
@@ -29,6 +31,8 @@ function addMatrix(A:number[][], B:number[][]) : number[][]{
             tempMatrix[i][j] = (A[i][j] + B[i][j]);
         }
     }
+	tempMatrix.pop();
+
     return tempMatrix
 }
 
