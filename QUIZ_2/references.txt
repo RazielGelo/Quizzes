@@ -1,0 +1,11 @@
+References:
+
+https://www.techopedia.com/definition/24200/object-relational-mapping--orm
+https://en.wikipedia.org/wiki/OAuth
+https://www.heavy.ai/technical-glossary/server-side-rendering#:~:text=A%20server%2Dside%20rendered%20application,which%20is%20ideal%20for%20SEO.
+https://next-learn-starter.vercel.app/posts/ssg-ssr
+https://www.section.io/engineering-education/client-side-rendering-vs-server-side-rendering-vs-static-site-generation/
+
+ Video Tutorial:
+
+https://www.youtube.com/watch?v=Sklc_fQBmcs

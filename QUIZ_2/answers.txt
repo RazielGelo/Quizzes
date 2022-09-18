@@ -1,0 +1,17 @@
+1. What is an ORM? An ORM in the simplest way that I understand it is like a middleware that connects/translates Object Code to a Database/Relational Database. As an example, say you are using PostgreSQL as your database, one ORM you can use for this is PRISMA which is or can be written in OOP languages such as JavaScript or C#, then the ORM converts this code to one you can use for your database. More often than not, you can't even see the normal query anymore it, an ORM makes it help seamless to write code in an OOP manner which will create or connect to your database. 
+
+2. What is Server Side Rendering? From what I learned about SSR the content is rendered on the Server upon request by the user which is ideal for data that changes frequently or constantly which ensures that user is always getting an updated version of the data. 
+
+3. What purpose does OAuth serve? OAuth which stands for "Open Authorization". In simplest way, it is a method for users to allow  other websites or applications access to information from other websites or applications without giving them the credentials. One example that uses this are applications like Spotify wherein you can login or register to use the service by allowing access to information to your account such as Google or Facebook without giving out your password. 
+
+4. Name some situations when Server Side Rendering would be a good idea? (at least 3) 
+	- It is a good idea if data changing frequently or dynamically.
+	- It is good idea if the page being pre-rendered needs input from the user.
+	- It is also good for when you want search engines to crawl easily(web crawlers) for SEO purposes.
+
+5. Name some situations when Static Rendering would be a good idea? (at least 3)
+	- It is a good idea if the page being rendered can be built once or updated seldomly or in rare cases only. 
+	- It is a good idea if the page being pre-rendered doesn't need input from the user. 
+	- It is a good idea for pages that you want more security for, because on this one there are no backend to hack or databases to inject malicios code into. 
+
+
