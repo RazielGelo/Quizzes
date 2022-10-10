@@ -1,14 +1,13 @@
 // import headerStyles from '../styles/Header.module.sass'
 
 const Header = () => {
-  return (
-	<div>
-		<h1>
-			<span>WebDev</span> News
-		</h1>
-		<p>Keep up to date with the latest web dev news</p>
-	</div>
-  )
+	return (
+		<div>
+			<h1>
+				Yugioh
+			</h1>
+		</div>
+	)
 }
 
 export default Header

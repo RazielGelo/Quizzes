@@ -21,9 +21,9 @@ const Meta = (props: Props) => {
 
 
 Meta.defaultProps = {
-  title: 'WebDev Newz',
+  title: 'Yugioh',
   keywords: 'web development, programming',
-  description: 'Get the latest news in web dev',
+  description: 'Yugioh Playing Cards',
 }
 
 export default Meta
