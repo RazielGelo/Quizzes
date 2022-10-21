@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan&display=swap');
+
+.navcontainer {
+
+	display: flex;
+	background-color: none;
+	color: rgb(0, 0, 0);
+	justify-content: space-between;
+	align-items: center;
+	height: 108px;
+
+}
+
+.subcontainer1 {
+	display: flex;
+	width: 65%;
+	justify-content: center;
+	
+}
+
+.subcontainer2 {
+	display: flex;
+	width: 35%;
+	justify-content: center;
+}
+
+.subcontainer1 p {
+	font-family: 'Kodchasan';	
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 98.5%;
+	text-align: center;
+	width: 162px;
+	margin-right: 100px;
+
+}
+
+.subcontainer2 p {
+	font-family: 'Kodchasan';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 98.5%;
+	text-align: center;
+	width: 162px;
+}

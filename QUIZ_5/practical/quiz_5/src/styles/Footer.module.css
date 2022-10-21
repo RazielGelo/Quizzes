@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan&display=swap');
+
+.footer {
+	display: flex;
+	justify-content: center;
+}
+
+.footer p {
+	
+	width: 494px;
+	height: 26px;
+	left: 484px;
+	top: 2555px;
+
+	font-family: 'Kodchasan';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+}
