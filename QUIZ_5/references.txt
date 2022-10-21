@@ -1,5 +1,8 @@
 References:
 
+https://next-auth.js.org/providers/credentials
+https://blog.devso.io/implementing-credentials-provider-on-nextjs-and-nextauth
+
 Video Tutorial:
 
-https://www.youtube.com/watch?v=mTz0GXj8NN0&t=3s
+https://www.youtube.com/watch?v=3YW65K6LcIA&t=463s
