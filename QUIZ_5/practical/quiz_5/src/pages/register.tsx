@@ -13,6 +13,7 @@ const register = () => {
 		event.preventDefault();
 	}
 
+
 	return (
 		<main className={mainStyles.main}>
 			<div className={mainStyles.sub1}>
@@ -25,19 +26,18 @@ const register = () => {
 				<form action="/api/register" onSubmit={registerUser} method='POST'>
 					<input type="email" name="email" placeholder="email" onChange={(e) => setEmail(e.target.value)} />
 					<br />
-					<input type="email" name="confirmemail" placeholder="confirm email" onChange={(e) => setemailConfirm(e.target.value)} />
+					<input type="email" placeholder="confirm email" onChange={(e) => setemailConfirm(e.target.value)} />
 					<br />
 					<input type="password" name="password" placeholder="password" onChange={(e) => setPassword(e.target.value)} />
 					<br />
-					<input type="password" name= "confirmpassword" placeholder="confirm password" onChange={(e) => setpasswordConfirm(e.target.value)} />
+					<input type="password" placeholder="confirm password" onChange={(e) => setpasswordConfirm(e.target.value)} />
 					<br />
-					<div>
-						<button type="submit" className={mainStyles.registerbtn}>							
-							<Image src='/images/register.png' width='334px' height='106px' alt='registerbtn' />
-						</button>
-					</div>
+					{/* <div> */}
+					<button type="submit" className={mainStyles.registerbtn}>							
+						<Image src='/images/register.png' width='334px' height='106px' alt='registerbtn' />
+					</button>
+					{/* </div> */}
 				</form>
-
 			</div>
 		</main>
 	)

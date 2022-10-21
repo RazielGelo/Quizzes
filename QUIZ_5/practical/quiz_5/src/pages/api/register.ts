@@ -5,6 +5,7 @@ import UserModel from "@/lib/models/User"
 import { EMAIL_REGEX, PASSWORD_REGEX } from "@/lib/resources/constants";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+	console.log("Hello")
 	try {
 		// check if the request is a POST
 		if (req.method === 'POST') {
