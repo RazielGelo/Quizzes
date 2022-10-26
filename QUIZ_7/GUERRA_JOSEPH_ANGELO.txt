@@ -1,7 +1,7 @@
-QUIZ DATE: <20-10-2022>
+QUIZ DATE: <26-10-2022>
 TEAM MEMBERS:
 GUERRA JOSEPH ANGELO[000450571]
 GIT LINK: https://github.com/RazielGelo/Quizzes
-VIDEO LINK: https://www.youtube.com/watch?v=kkUbbXpKbus
+VIDEO LINK: 
 ANSWER DOCUMENT: <PATH OF ANSWER DOCUMENT IN GIT LINK>
 ADDITIONAL INFORMATION: Practical Code of Quiz in Practical Folder
